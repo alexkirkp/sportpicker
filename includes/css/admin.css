@@ -1,0 +1,23 @@
+table {
+	font-size: 12px;
+}
+
+.updateColumn {
+	width: 96px;
+	float: left;
+	border: 1px solid black;
+	padding: 4px 0 4px 0;
+	margin: 0 -1px -1px 0;
+	height: 26px;
+	text-align: center;
+}
+
+.updateColumnHeader {
+	width: 96px;
+	float: left;
+	border: 1px solid black;
+	padding: 4px 0 4px 0;
+	margin: 0 -1px -1px 0;
+	text-align: center;
+	height: 38px;
+}

@@ -1,0 +1,4 @@
+*.sublime-project
+*.htaccess
+/admin
+/images/sport_photos

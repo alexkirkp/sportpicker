@@ -1,0 +1,204 @@
+.clear {
+	clear: both;
+}
+
+h1 {
+	margin: 5px;
+	color: #05296E;
+}
+
+h2 a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#Content {
+	padding: 4px;
+	margin: auto;
+}
+
+#Header {
+	width: 100%;
+	height: 100px;
+	background-color: #6B8FD4;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+#Logo {
+	height:  68px;
+	line-height: 68px;
+	float:left;
+	margin: 16px;
+}
+
+nav {
+	margin: 48px 32px 0 0;
+	float:right;
+}
+
+nav li {
+	float:left;
+	list-style-type: none;
+	margin-left: 25px;
+	color: #FFFFFF;
+}
+button {
+	border-radius: 6px;
+	margin: 3px;
+	padding: 2px 8px 2px 8px;
+}
+select {
+	background-color: #FEDDBF;
+	color: #000000;
+}
+
+/* Comparison */
+#ComparisonContainer {
+	background-color: #65E080;
+	border-radius: 10px;
+	padding: 8px;
+}
+#Comparison {
+	border-radius: 10px;
+}
+
+#Comparison a:visited {
+	color: #C25B00;
+}
+
+#Comparison a {
+	color: #000000;
+}
+#TableControls {
+	background-color: #FFB573;
+	border-radius: 10px;
+	height: 100%;
+	color: #06266F;
+	padding: 8px;
+	margin-right: 8px;
+	width: 180px;
+}
+#ComparisonSpace {
+	width: 8px;
+}
+.sortSection {
+	border: 1px solid #06266F;
+	margin-bottom: 8px;
+}
+.sortSection h4 {
+	margin: 4px;
+	cursor: pointer;
+}
+.hidden {
+	display: none;
+}
+
+/* tables */
+table.tablesorter {
+	font-family:arial;
+	background-color: #CDCDCD;
+	margin:10px 0pt 15px;
+	font-size: 12pt;
+	text-align: left;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #B4C8EF;
+	border: 1px solid #FFF;
+	font-size: 12pt;
+	padding: 4px 16px 4px 4px;
+}
+table.tablesorter thead tr .header {
+	background-image: url(../images/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+	color: #3D3D3D;
+	padding: 4px;
+	background-color: #FFF;
+	vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#E8F0FF;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(../images/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(../images/desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+	background-color: #38E05D;
+}
+
+/* Sport Page */
+#Sport {
+
+}
+
+#SportInfo {
+
+}
+
+.sportInfoCell {
+	float: left;
+	padding: 4px;
+	margin: 4px;
+	width: 200px;
+	height: 19px;
+	background-color: #66E275;
+	border-radius: 10px;
+}
+
+.sportInfoValue {
+	float: right;
+}
+
+.sportInfoRow {
+
+}
+
+#SportDescription {
+	border: 1px solid #FF9640;
+	padding: 8px;
+	margin: 10px 4px 4px 4px;
+	border-radius: 10px;
+	background-color: #DDDDDD;
+}
+
+#SportPhotos {
+	/*border: 1px solid #008110;*/
+	border: 1px solid #FFF;
+	float: right;
+	margin: 0px 0px 8px 8px;
+	border-radius: 10px;
+	background-color: #FFF;
+}
+
+#SportPhotos img {
+	float: left;
+	margin: 8px;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+html[xmlns] .clearfix {
+	display: block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
