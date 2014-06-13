@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					src: '**/*.js',
-					dest: 'build/includes/js',
+					dest: 'dist/includes/js',
 					cwd: 'src/includes/js'
 				}]
 			}
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
 				expand: true,
 				cwd: 'src/',
 				src: ['**/*.{png,jpg,gif}'],
-				dest: 'build/'
+				dest: 'dist'
 			}]
 			}
 		},
@@ -35,7 +35,11 @@ module.exports = function(grunt) {
 				expand: true,
 				cwd: 'src',                    // set working folder / root to copy
 			    src: '**/*.{php,htaccess}',    // copy all .gif files
-			    dest: 'build'                  // destination folder
+			    dest: 'dist'                   // destination folder
+			},
+			jquery:{
+				src: 'bower_components/jQuery/dist/jquery.min.js',
+				dest: 'dist/includes/js/jquery.js'
 			}
 		},
 		jshint: {
@@ -66,14 +70,31 @@ module.exports = function(grunt) {
 			}
 		},
 		notify: {
-			options: {
-				title: 'Build Successful',
-				message: '<%= pkg.name %> build finished successfully.'
+			full: {
+				options: {
+					title: 'Full Build Successful',
+					message: '<%= pkg.name %>'
+				}
 			},
-			all: {
-
-			}
-		}
+			watch: {
+				options: {
+					title: 'Watch Build Successful',
+					message: '<%= pkg.name %>'
+				}
+			},
+			js: {
+				options: {
+					title: 'JS Build Successful',
+					message: '<%= pkg.name %>'
+				}
+			},
+			images: {
+				options: {
+					title: 'Image Build Successful',
+					message: '<%= pkg.name %>'
+				}
+			},
+		},
 	});
 
 	// measures the time each task takes
@@ -90,9 +111,11 @@ module.exports = function(grunt) {
 
 
 	// Default task(s).
-	grunt.registerTask('default', ['newer:jshint', 'newer:uglify', 'newer:imagemin', 'newer:copy', 'notify']);
-	grunt.registerTask('watcher', ['newer:jshint', 'newer:uglify', 'newer:imagemin', 'newer:copy', 'notify']);
-	grunt.registerTask('js', ['newer:jshint', 'newer:uglify', 'notify']);
-	grunt.registerTask('images', ['newer:imagemin', 'newer:copy']);
+	grunt.registerTask('default', ['newer:jshint', 'newer:uglify', 'newer:imagemin', 'newer:copy', 'notify:full']);
+	grunt.registerTask('fullnoimg', ['jshint', 'uglify', 'copy', 'notify:full']);
+	grunt.registerTask('full', ['jshint', 'uglify', 'imagemin', 'copy', 'notify:full']);
+	grunt.registerTask('watcher', ['newer:jshint', 'newer:uglify', 'newer:imagemin', 'newer:copy:files', 'notify:watch']);
+	grunt.registerTask('js', ['newer:jshint', 'newer:uglify', 'notify:js']);
+	grunt.registerTask('images', ['newer:imagemin', 'newer:copy', 'notify:images']);
 
 };
