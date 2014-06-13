@@ -6,6 +6,6 @@ $(function (){
 
 	$('.sortSection h4').click(function (){
 		$(this).next().slideToggle();
-	});
+	}); 
 
 })();

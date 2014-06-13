@@ -1,0 +1,2 @@
+/*! sportpicker 2014-06-13 */
+$(function(){$(".toggle").removeClass("hidden"),$(".sortSection div").addClass("hidden"),$("#update").addClass("hidden"),$(".sortSection h4").click(function(){$(this).next().slideToggle()}),$(".toggle").click(function(a){var b=$(this).data("column");a.preventDefault(),$("."+b).fadeToggle(),$(this).html("Hide"===$(this).html()?"Show":"Hide")}),$('input[type="radio"]').change(function(){$(this).parents("form:first").submit()}),$("#categories").change(function(){$(this).parents("form:first").submit()})});

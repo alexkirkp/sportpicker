@@ -2,3 +2,4 @@
 *.htaccess
 /admin
 /images/sport_photos
+/node_modules

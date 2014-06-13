@@ -1,0 +1,2 @@
+/*! sportpicker 2014-06-13 */
+var RETINA_NS="retina";$.magnificPopup.registerModule(RETINA_NS,{options:{replaceSrc:function(a){return a.src.replace(/\.\w+$/,function(a){return"@2x"+a})},ratio:1},proto:{initRetina:function(){if(window.devicePixelRatio>1){var a=mfp.st.retina,b=a.ratio;b=isNaN(b)?b():b,b>1&&(_mfpOn("ImageHasSize."+RETINA_NS,function(a,c){c.img.css({"max-width":c.img[0].naturalWidth/b,width:"100%"})}),_mfpOn("ElementParse."+RETINA_NS,function(c,d){d.src=a.replaceSrc(d,b)}))}}}});

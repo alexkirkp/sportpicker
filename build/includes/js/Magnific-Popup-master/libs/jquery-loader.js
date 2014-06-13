@@ -1,0 +1,2 @@
+/*! sportpicker 2014-06-13 */
+!function(){var a="../libs/jquery/jquery.js",b=location.search.match(/[?&]jquery=(.*?)(?=&|$)/);b&&(a="http://code.jquery.com/jquery-"+b[1]+".js"),document.write('<script src="'+a+'"></script>')}();

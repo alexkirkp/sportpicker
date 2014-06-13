@@ -1,0 +1,2 @@
+/*! sportpicker 2014-06-13 */
+function writeFile(a,b){var c=new PrintWriter(new FileWriter(a));c.print(b),c.close()}function read(a){for(var b=new File(a),c=new BufferedReader(new FileReader(b)),d=null,e=new java.lang.StringBuffer(b.length());null!=(d=c.readLine());)e.append(d),e.append("\n");return e.toString()}importPackage(java.io);
